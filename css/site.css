@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+}
+
+p.customfont { 
+    font-family: "Wind VF";
+    font-weight: 1 999;
+}
+
+.windvf {
+  font-family: "Wind VF";
+}
+
+body {
+    /* background-color: white; */
+}
+
+.responsive {
+    width: auto;
+    height: auto;
+}
+
+.container {
+   position: relative;
+   /* text-align: center; */
+   color: black;
+   width: auto;
+   height: auto;
+   background-color: #cc3399;
+}
+
+.centeredd, .var {
+    position: absolute;
+}
+
+.centered, .var {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@keyframes animation {
+  0%   {font-variation-settings: 'WIND' 289;}
+  25%  {font-variation-settings: 'WIND' 287;}
+  50%  {font-variation-settings: 'WIND' 285;}
+  75%  {font-variation-settings: 'WIND' 287;}
+  100% {font-variation-settings: 'WIND' 289;}
+}
+
+.var {
+    font-family: "Wind VF";
+    font-size: 500%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+img {
+    display: block;
+}
+
+.logo {
+    position: relative;
+    text-align: center;
+}
+
+
+:root {
+    --direction: 289;
+}
+
+.landing-header {
+    background-color:#000000;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 10% 0;
+    width: 100%;
+    /* height: fit-content; */
+    z-index: 9;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+.site-header {
+    background-color:#000000;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0px;
+    width: 100%;
+    /* height: fit-content; */
+    z-index: 9;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+.logo{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.flow-logo {
+    padding-left: 3%;
+    transform: translate( -0%, 30% );
+    /* color: black; */
+    font-variation-settings: 'WIND' var(--direction);
+    font-family: "Wind VF";
+    font-size: 700%;
+    height: 220px;
+    /* background-image: url(/media/fart.gif); */
+    background-position:center;
+    background-size: 120%;
+    z-index: 9;
+}
+
+.flow-logo-ani {
+    font-family: "Wind VF";
+    font-size: 500%;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.flow-logo #flow {
+margin-bottom: 10;
+margin-bottom: -150px;
+}
+
+.nav{
+    position: relative;
+    font-size: 2.0rem; line-height: 1.2;  letter-spacing: -.1rem;
+    padding: 22px;
+    z-index: 9;
+}
+
+.nav a{
+    color: #222;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: #909;
+}
+
+.nav-item{
+    margin-bottom: 5px;
+    background-color: #FFFe;
+}
+.nav-item a{
+
+}
+.header-image{
+    width: 100%;
+    object-fit: cover;
+  }
+.md-image{
+    width: 100%;
+    object-fit: cover;
+  }
+footer{
+    text-align: center;
+}
+.footer-logos{
+display: flex;
+align-content: space-evenly;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+.footer-logo{
+/* width: 33%; */
+}
